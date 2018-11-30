@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class PalindromeSolution1 {
 
     public static boolean palindrome(String text) {
+        //using string method charAt()
         int i = text.length() - 1;
         int n = 0;
         
