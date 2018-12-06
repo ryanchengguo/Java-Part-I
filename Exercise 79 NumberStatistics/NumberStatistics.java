@@ -1,3 +1,4 @@
+//Number Statistics
 public class NumberStatistics {
     private int amountOfNumbers;
     private int addedNumberCounter=0;
