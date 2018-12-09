@@ -1,7 +1,3 @@
-/*
- *  DO TOT TOUCH THIS CLASS!
- */
-
 public class Person {
 
     private String name;
