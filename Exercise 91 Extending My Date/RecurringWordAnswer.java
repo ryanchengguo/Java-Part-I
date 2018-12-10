@@ -32,6 +32,22 @@ public class MyDate {
                 && this.day < compared.day) {
             return true;
         }
+        
+        return false;
+    }
+    public void advance(){
+        if (this.day == 30){
+            this.day = 1;
+            if (this.month == 12) {
+                this.month = 1;
+                this.year++;
+            }else{
+                this.month++;
+            }
+        }else{
+            this.day++;
+        }
+    }
 
  
 }
