@@ -1,21 +1,22 @@
-import java.util.ArrayList;
-import java.util.Scanner;
- 
-public class RecurringWordAnswer {
- 
-    public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
-        // create here the ArrayList 
-        
-        ArrayList<String> words = new ArrayList<String>();
-        while (true) {
-            System.out.print("Type a word:");
-            String word = reader.nextLine();
-            if (words.contains(word)) {
-                System.out.println("You gave twice the word " + word);
-                break;
-            }
-            words.add(word);
-        }  
+public class MyDate {
+
+    private int day;
+    private int month;
+    private int year;
+
+    public MyDate(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
+    public MyDate afterNumberOfDays(int days){
+        MyDate newMyDate = new MyDate(this.day,this.month,this.year);
+        newMyDate.advance(days);
+        return newMyDate;
+    }
+
+    public String toString() {
+        return this.day + "." + this.month + "." + this.year;
+    }
+ 
 }
