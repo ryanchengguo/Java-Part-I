@@ -28,3 +28,10 @@ public String toString() {
         }
 
         return false;
+}
+    public int differenceInYears(MyDate comparedDate) {
+        int thisDate = convertToDate(this);
+        int otherDate = convertToDate(comparedDate);
+
+        int differenceInDates = Math.abs(thisDate - otherDate);
+        return differenceInDates / 360;
