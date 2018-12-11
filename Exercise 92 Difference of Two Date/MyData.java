@@ -26,3 +26,5 @@ public String toString() {
                 && this.day < compared.day) {
             return true;
         }
+
+        return false;
