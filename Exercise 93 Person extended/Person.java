@@ -19,3 +19,19 @@ public class Person {
         this.birthday =  new MyDate(Calendar.getInstance().get(Calendar.DATE),
                 Calendar.getInstance().get(Calendar.MONTH) + 1, Calendar.getInstance().get(Calendar.YEAR));
     }
+
+    public int age() {
+// calculate the age based on the birthday and the current day
+        // you get the current day as follows: 
+        // Calendar.getInstance().get(Calendar.DATE);
+        // Calendar.getInstance().get(Calendar.MONTH) + 1; // January is 0 so we add one
+        // Calendar.getInstance().get(Calendar.YEAR);
+        MyDate today = new MyDate(Calendar.getInstance().get(Calendar.DATE),
+                Calendar.getInstance().get(Calendar.MONTH) + 1, Calendar.getInstance().get(Calendar.YEAR));
+
+        return today.differenceInYears(birthday);
+    }
+    
+    public boolean olderThan(Person compared) {
+        return birthday.earlier(compared.birthday);
+    }
