@@ -35,3 +35,12 @@ public class Person {
     public boolean olderThan(Person compared) {
         return birthday.earlier(compared.birthday);
     }
+
+    public String getName() {
+        return this.name;
+    }
+    
+    public String toString() {
+        return this.name + ", born " + this.birthday;
+    }
+}
