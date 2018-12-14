@@ -18,3 +18,9 @@ public class Phonebook {
     public void add(String name, String number){
         phoneBook.add(new Person(name,number));
     }
+
+    public String searchNumber(String name){
+        for (Person person:phoneBook
+             ) {
+            if (person.getName().contains(name)){
+                return person.getNumber();
