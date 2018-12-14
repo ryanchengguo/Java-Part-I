@@ -24,3 +24,9 @@ public class Phonebook {
              ) {
             if (person.getName().contains(name)){
                 return person.getNumber();
+
+               }
+          }
+        return "number not known";
+    }
+}
