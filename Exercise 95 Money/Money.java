@@ -41,3 +41,11 @@ public class Money {
             if (this.cents < compared.cents )
                 return true;
 
+    }
+        if (this.euros < compared.euros) return true;
+        return false;
+    }
+
+    public int euroToCents(int euro, int cents){
+        return euro * 100 + cents;
+    }
