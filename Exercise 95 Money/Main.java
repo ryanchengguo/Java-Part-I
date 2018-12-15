@@ -11,3 +11,7 @@ public class Main {
         System.out.println(c); 
 
         c = c.minus(a);       
+
+        System.out.println(a);  
+        System.out.println(b);  
+        System.out.println(c);  
