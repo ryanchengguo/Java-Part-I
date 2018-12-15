@@ -17,3 +17,21 @@ public class Money {
     public int euros() {
         return euros;
     }
+
+    public int cents() {
+        return cents;
+    }
+
+    @Override
+    public String toString() {
+        String zero = "";
+        if (cents < 10) {
+            zero = "0";
+        }
+
+        return euros + "." + zero + cents + "e";
+    }
+    public Money plus(Money added){
+        Money sum = new Money(this.euros+added.euros,this.cents+ added.cents);
+        return sum;
+    }
