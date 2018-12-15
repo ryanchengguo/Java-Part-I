@@ -9,3 +9,11 @@ public class Money {
             euros += cents / 100;
             cents %= 100;
         }
+
+        this.euros = euros;
+        this.cents = cents;
+    }
+
+    public int euros() {
+        return euros;
+    }
