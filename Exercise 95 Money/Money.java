@@ -49,3 +49,8 @@ public class Money {
     public int euroToCents(int euro, int cents){
         return euro * 100 + cents;
     }
+
+    public Money minus(Money decremented){
+        int thisMoney = euroToCents(this.euros, this.cents);
+        int thatMoney = euroToCents(decremented.euros, decremented.cents);
+        int newMoney = thisMoney - thatMoney;
