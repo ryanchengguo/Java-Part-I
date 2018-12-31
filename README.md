@@ -1,6 +1,10 @@
 # Java-Part-I
 Programming in Java Part 1 Exercises
 
+http://mooc.fi/courses/2013/programming-part-1/
+
+This course is equivalent to the first semester of the Computer Science program at the University of Helsinki.
+
 Welcome to University of Helsinki’s massive open online course (MOOC) on object-oriented programming!
 
 During this course you will learn all the basics of computer programming, algorithms and object-oriented programming using the Java programming language. The course includes comprehensive course materials and plenty of programming exercises, each tested using our automatic testing service Test My Code.
